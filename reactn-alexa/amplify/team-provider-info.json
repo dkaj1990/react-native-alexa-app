@@ -1,0 +1,20 @@
+{
+    "test": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-reactn-alexa-test-115645-authRole",
+            "UnauthRoleArn": "arn:aws:iam::698818887935:role/amplify-reactn-alexa-test-115645-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::698818887935:role/amplify-reactn-alexa-test-115645-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-reactn-alexa-test-115645-deployment",
+            "UnauthRoleName": "amplify-reactn-alexa-test-115645-unauthRole",
+            "StackName": "amplify-reactn-alexa-test-115645",
+            "StackId": "arn:aws:cloudformation:us-east-1:698818887935:stack/amplify-reactn-alexa-test-115645/48a645f0-6d27-11ea-b16c-0e2e9aec3a21",
+            "AmplifyAppId": "d1n5xbpgetbobr"
+        },
+        "categories": {
+            "auth": {
+                "reactnalexa4db1ee93": {}
+            }
+        }
+    }
+}

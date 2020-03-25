@@ -1,0 +1,128 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "important documents",
+            "intents": [
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": [
+          
+                    ]
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddDocumentIntent",
+                    "slots": [
+                        {
+                            "name": "DocumentName",
+                            "type": "AMAZON.City",
+                            "samples": [
+                                "{DocumentName}"
+                            ]
+                        },
+                        {
+                            "name": "ExpDate",
+                            "type": "AMAZON.DATE",
+                            "samples": [
+                                "{ExpDate}"
+                            ]
+
+                        }
+                    ],
+                    "samples": [
+                        "add {DocumentName} with expiration date of {ExpDate}",
+                        "add"
+                    ]
+                },
+                {
+                    "name": "RemoveDocumentIntent",
+                    "slots": [
+                        {
+                            "name": "DocumentName",
+                            "type": "AMAZON.City",
+                            "samples": [
+                                "{DocumentName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "remove {DocumentName} ",
+                        "delete {DocumentName}"
+                    ]
+                },
+  
+                {
+                    "name": "GetDocumentsIntent",
+                    "slots": [],
+                    "samples": [
+                        "get my documents"
+                    ]
+                },
+
+                {
+                    "name": "GetDocumentsByTitleIntent",
+                    "slots": [
+                        {
+                            "name": "DocumentName",
+                            "type": "AMAZON.City",
+                            "samples": [
+                                "{DocumentName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "when does my {DocumentName} expire",
+                        "get my {DocumentName} expiraion", 
+                        "do i have any document related to {DocumentName}"
+                    ]
+                }
+              
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "AddDocumentIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "DocumentName",
+                            "type": "AMAZON.City",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.932310416052.1004645578092"
+                            }
+                        }
+                    ]
+                }
+                
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.932310416052.1004645578092",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which document would you like to add "
+                    }
+                ]
+            }
+        ]
+        
+    }
+}

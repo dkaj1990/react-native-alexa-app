@@ -1,0 +1,44 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.f682c066-6706-42f4-bfd4-905ea563f657",
+      "was_cloned": false,
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "ask-custom-dynamodb-starter-default"
+              }
+            }
+          }
+        }
+      },
+      "in_skill_products": [],
+      "resources": {
+        "manifest": {
+          "eTag": "db7af72c3fcce6b505a34e8680812124"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "fdbe0fa1f57e815dd32be74ed962a38c"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:698818887935:function:ask-custom-dynamodb-starter-default",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/custom",
+            "functionName": "ask-custom-dynamodb-starter-default",
+            "handler": "index.handler",
+            "revisionId": "7d9aad49-0a4f-4fd3-b130-0ed6add75765",
+            "runtime": "nodejs10.x"
+          }
+        ]
+      }
+    }
+  }
+}
